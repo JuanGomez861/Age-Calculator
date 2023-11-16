@@ -17,6 +17,6 @@ boton.addEventListener('click', () => {
     let fechas = fechaUser([dayValue, monthValue, yearValue])
 
     texto.forEach((x, y) => {
-        x.innerHTML = fechas[y]
+        x.innerHTML = `${fechas[y]} `
     })
 })
