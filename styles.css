@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
 :root {
     --White: hsl(0, 0%, 100%);
     --Off-white: hsl(0, 0%, 94%);
@@ -15,7 +16,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--Off-white);
     height: 100vh;
@@ -23,25 +24,28 @@ body{
     align-items: center;
     justify-content: center;
 }
-.main{
+
+.main {
     width: 440px;
     height: 340px;
     background-color: var(--White);
     border-radius: 12px 12px 100px 12px;
-    box-shadow: 0 0 2px rgb(0,0,0,.5);
-    padding: 30px 20px ;
+    box-shadow: 0 0 2px rgb(0, 0, 0, .5);
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.form{
+
+.form {
     width: 100%;
     display: flex;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--Light-grey);
     margin-bottom: 20px;
 }
-.img{
+
+.img {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -52,32 +56,69 @@ body{
     cursor: pointer;
     padding: 10px;
 }
-.input_title{
+
+.img:hover {
+    background-color: var(--Off-black);
+}
+
+.input_title {
     font-size: .7rem;
     font-weight: 400;
     font-style: italic;
     color: var(--Smokey-grey);
     letter-spacing: 2px;
 }
-.input{
+.input_error{
+    outline: 1px solid var(--Light-red);
+    font-weight: 700;
+}
+.input {
     width: 80px;
     height: 40px;
-    padding:0 8px;
+    padding: 0 8px;
     border: 1px solid var(--Light-grey);
     border-radius: 8px;
+
+
 }
-.input_container{
+
+.title_error{
+    color: var(--Light-red);
+}
+.input:focus {
+    outline: .7px solid var(--Purple);
+}
+.mensaje{
+    margin-top:5px ;
+    font-size: .6rem;
+    color: var(--Light-red);
+    font-weight: 400;
+    font-style: italic;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input_container {
     margin: 0 10px;
+
 }
-.input::placeholder{
+.input_container_error{
+    color: var(--Light-red);
+}
+.input::placeholder {
     font-size: 1rem;
     color: var(--Smokey-grey);
     font-weight: 700;
-    
+
 }
-.main_text{
+
+.main_text {
     font-size: 2.5rem;
 }
-.fecha{
+
+.fecha {
     color: var(--Purple);
 }

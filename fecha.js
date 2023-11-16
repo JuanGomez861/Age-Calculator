@@ -13,7 +13,7 @@ export function fechaUser([dia, mes, año]) {
         monthUser = mesActual - 1
     } else if (mesActual > mes) {
         monthUser = (mesActual - 1) - mes
-    } else if (mesActual == mes) {
+    } else {
         monthUser = mesActual - mes
     }
 
@@ -30,12 +30,9 @@ export function fechaUser([dia, mes, año]) {
 
 
 function contarDias(inicio, fin) {
-    let contador = 0
     let resta = 31 - inicio
     let long = resta + fin
-    for (let i = 0; i < long; i++) {
-        contador++
-    }
-    return contador
+    return long
 }
+console.log(contarDias(20, 16))
 
